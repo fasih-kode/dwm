@@ -1,0 +1,17 @@
+first, you will need to install X server & git
+
+# pacman -S xorg-xinit xorg git
+
+clone suckless software such as dwm (window manager), st (recommended terminal), and dmenu (simple application menu)
+
+# git clone git://git.suckless.org/dwm
+# git clone git://git.suckless.org/st
+# git clone git://git.suckless.org/dmenu
+
+change directory into each one, and compile them
+
+$ cd dwm ## do this step also with st and dmenu
+# sudo make clean install
+
+$ <favorite text editor> .xinitrc
+    from there, add "exec dwm" into the file, save, and exit
